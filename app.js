@@ -10,9 +10,11 @@ app.controller("AppCtrl", function ($scope){
 app.directive("isoScope", function (){
   return{
     scope: {
-      project: "=",
+      project: "="
     },
-   templateUrl:"project.html"
+    //this scope object makes it IsoScope
+   templateUrl:"project.html",
+   restrict: "E"
   }
 })
 
